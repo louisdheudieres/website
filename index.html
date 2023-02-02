@@ -5,6 +5,7 @@
       <link type="text/css" rel="stylesheet" href="stylesheet.css">
       <link rel="shortcut icon" type="image/x-icon" href="http://www.louisdheudieres.com/kathryn.ico"/>
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
       <base target="_self">
       <title>Louis d'Heudieres</title>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -13,139 +14,509 @@
 
   <body class="index">
 
-  <div id="container">
+  	<div id="container">
 
-    <div id="container-index">
+  		<div id="menu">
 
-      <script>
-            function blurb() {
-              var element = document.getElementById('blurb');
-              element.classList.toggle("hidden");
-              var element = document.getElementById('container-menu');
-              element.classList.toggle("longmenu");
-              var element = document.getElementById('worklist');
-              element.classList.toggle("highworklist");
-            }
-      </script>
+  			<script>
+            	function lspopup() {
+             		var element = document.getElementById('lsmenu');
+              		element.classList.toggle("hidden");
+            	}
+      			function showhide(id) {
+      				var content = document.getElementById("content");
+      				content.innerHTML = document.getElementById(id).innerHTML;
+      			}
+      		</script>
 
-      <div id="container-blurb">
+  			<a href="index.html">Louis d'Heudi&egrave;res</a><br>
+  			<br>
 
-      	<div id="blurb" class="hidden">Louis d'Heudieres is a composer and performer based in London. He makes music for live performance situations, collaborates with visual artists, dancers, and theatre makers, improvises, teaches, and sometimes writes texts. His interests lie in questioning the idea of music, especially as it has come to be defined socially and culturally in the West. As such, his work examines the norms of the concert format, engages with performers' lived experience outside of musical training, and embraces experimental approaches to scoring. Through the practice of aural notation he has developed a body of work which explores the semantic/sonic duality inherent in recorded and found sounds, extending, in a way, the tradition of musique concrète. Many of his works stage vocal, instrumental, or choreographic translations of these sounds, foregrounding performers' personal interpretations of them. His works have been performed around the world, in everything from underground corners of small DIY scenes to state-funded international festivals.
-      	</div>
+  			<span class="menutitle">projects</span><br>
+  			<!--<a onclick="showhide('cilia')">CILIA</a><br>
+  			<a onclick="showhide('cacaaw')">corror, tiou, squa, pipiqui</a><br>-->
+  		<a onclick="showhide('debussysecret')">Debussy's Secret Devotions</a><br>
+  		<a onclick="showhide('reflects')">Reflects Dans Sequana</a><br>
+			<a onclick="showhide('lungs')">Need Bigger Lungs</a><br>
+			<a onclick="showhide('sitzfleisch')">Sitzfleisch</a><br>
+			<a onclick="lspopup()">Laughter Studies</a><br>
+				<div id="lsmenu" class="hidden">
+					<a onclick="showhide('ls7')">7</a><br>
+					<a onclick="showhide('ls6')">6</a><br>
+					<a onclick="showhide('ls5')">5</a><br>
+					<a onclick="showhide('ls4')">4</a><br>
+					<a onclick="showhide('ls3')">3</a><br>
+					<a onclick="showhide('ls2')">2</a><br>
+					<a onclick="showhide('ls1')">1</a><br>
+				</div>
+			<a onclick="showhide('autoglossia')">Autoglossia</a><br>
+			<a onclick="showhide('empathy')">Empathy Reducer</a><br>
+			<a onclick="showhide('voxpop')">Vox Pop</a><br>
+			<a onclick="showhide('totalexp')">Total Experience</a><br>
+			<a onclick="showhide('somethoughts')">Some Thoughts On La Monte Young’s Composition 1960 #10</a><br>
+			<a onclick="showhide('foron')">for_____ on_____</a><br>
+			<a onclick="showhide('neitherserious')">neither serious/or, I take the liberty/of not writing to you/regarding my serious ‘Variations’</a><br>
+			<br>
 
-      </div>
+			<span class="menutitle">research</span><br>
+			<a onclick="showhide('attending')">Attending To Attending</a><br>
+			<a onclick="showhide('phd')">Scores In Time</a><br>
+			<br>
 
-      <div id="container-menu">
+			<span class="menutitle">collaborations</span><br>
+			<a href="http://www.annikakahrs.com">Annika Kahrs</a><br>
+			<a href="http://www.ninakuttler.com">Nina Kuttler</a><br>
+			<br>
 
-        	<div id="menu"><a onclick="worklist()">works</a></div>
-          <div id="menu"><a onclick="otherlist()">+</a></div>
-          <div id="menu"><a onclick="blurb()">about</a></div>
-        	<div id="menu"><a target="_blank" rel="noopener noreferrer" href="contact.html">contact</a></div>
+			<span class="menutitle">selected press + interviews</span><br>
+			<a onclick="showhide('futureclass')">Future Classical</a><br>
+			<a onclick="showhide('trj-wire')">The Wire</a><br>
+			<br>
+			
+			<a onclick="showhide('about')">about</a><br>
+			<br>
 
-      </div>
+  		</div>
 
-      <script>
-            function worklist() {
-              var element = document.getElementById('worklist');
-              element.classList.toggle("hidden");
-              var element = document.getElementById('worklist');
-              element.classList.toggle("normalworklist");
-            }
-      </script>
+  		<div id="content">
+        <div id="homepage">
 
-      <div id="worklist" class="hidden">
-
-      <!--<div class="top"><span class="workinfo">For performance materials and more info, email louis (dot) dheudieres (at) live (dot) co (dot) uk</span><br></div>-->
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="need_bigger_lungs.html"><img src="imgs/kathryn_crouching.png"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="need_bigger_lungs.html">Need Bigger Lungs</a></div><div class="workinfo"> Kathryn Williams, tuba</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="sitzfleisch.html"><img src="imgs/bass_drums-1.jpg"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="sitzfleisch.html">Sitzfleisch</a></div><div class="workinfo"> three performers, narrator, styrofoam instruments, video, stereo sound</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="laughter_studies_7.html"><img src="imgs/LS7-3.jpg"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="laughter_studies_7.html">Laughter Studies 7</a></div><div class="workinfo"> three performers, mixed ensemble, stereo sound, subtitles</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="laughter_studies_6.html"><img src="imgs/LS6_3.jpg"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="laughter_studies_6.html">Laughter Studies 6</a></div><div class="workinfo"> four performers, mixed ensemble</div></div></div>
-
-        <!--<div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="empathy_reducer.html"><img src="imgs/empathy_reducer_1.jpg"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="empathy_reducer.html">Empathy Reducer</a></div><div class="workinfo"> performer, keyboard, stereo sound</div></div></div>-->
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="autoglossia.html"><img src="imgs/autogloss-2.png"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="autoglossia.html">Autoglossia</a><div class="workinfo"> digital EP</div></div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="vox_pop.html"><img src="imgs/vox_pop_ba.png"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="vox_pop.html">Vox Pop</a></div><div class="workinfo"> four performers</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="laughter_studies_4.html"><img src="imgs/LS4-xy.png"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="laughter_studies_4.html">Laughter Studies 4</a></div><div class="workinfo"> solo vocalist, jazz trio, mixed ensemble</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="total_experience.html"><img src="imgs/total_exp_w_8_3.jpg"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="total_experience.html">Total Experience</a></div><div class="workinfo"> performer, edibles, stereo sound</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="laughter_studies_3.html"><img src="imgs/maulwerker-ls3-2.png"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="laughter_studies_3.html">Laughter Studies 3</a></div><div class="workinfo"> three performers</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="some_thoughts_on_composition_1960.html"><img src="imgs/some_thoughts_1.JPG"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="some_thoughts_on_composition_1960.html">Some Thoughts On La Monte Young's Composition 1960 #10</a></div><div class="workinfo"> performer, powerpoint presentation, stereo sound</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="laughter_studies_2.html"><img src="imgs/LS2_louis_alice.jpg"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="laughter_studies_2.html">Laughter Studies 2</a></div><div class="workinfo"> two performers</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="laughter_studies_1.html"><img src="imgs/LS1-dimitri.jpg"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="laughter_studies_1.html">Laughter Studies 1</a></div><div class="workinfo"> two performers</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="for_____on_____.html"><img src="imgs/for_on_david_ruben.png"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="for_____on_____.html">for_____ on_____</a></div><div class="workinfo"> open instrumentation, stereo sound</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="neither_serious.html"><img src="imgs/neither_serious_impacts_2_copy.jpg"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="neither_serious.html">neither serious/or, I take the liberty/of not writing to you/regarding my serious 'Variations'</a></div><div class="workinfo"> string quartet</div></div></div>
-
-        <!--<div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="8X6.html"><img src="imgs/8x6.png"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="8X6.html">8 X 6</a></div><div class="workinfo"> two pianists</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="and_each_clear_change.html"><img src="imgs/and_each_clear_change_1b.png"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="and_each_clear_change.html">and each clear change/process tipped without breaks/a little of/in it</a></div><div class="workinfo"> large ensemble</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="my_favourite_piece.html"><img src="imgs/MFP_antoine_francoise.jpg"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="my_favourite_piece.html">My Favourite Piece</a></div><div class="workinfo"> Online project for sight-reading musicians</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="4X4=5.html"><img src="imgs/4x4=5_b.png"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="4X4=5.html">4 X 4 = 5</a></div><div class="workinfo"> solo pianist</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="resonance_piece_1.html"><img src="imgs/res_piece_1_1.jpg"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="resonance_piece_1.html">Resonance Piece #1. falling, rising, rising, falling</a></div><div class="workinfo"> mixed quartet</div></div></div>
-
-        <div class="work"><div class="workimage"><a target="_blank" rel="noopener noreferrer" href="study_of_a_process.html"><img src="imgs/study-of-a-process.png"/></a></div><div class="worktitle"><div><a target="_blank" rel="noopener noreferrer" href="study_of_a_process.html">study of a process</a></div><div class="workinfo"> solo musician</div></div></div>-->
-
-      </div>
-
-      <script>
-            function otherlist() {
-              var element = document.getElementById('otherlist');
-              element.classList.toggle("hidden");
-              var element = document.getElementById('container-menu');
-              element.classList.toggle("shortmenu");
-              var element = document.getElementById('container-blurb');
-              element.classList.toggle("shortblurb");             
-            }
-      </script>
-
-      <div id="otherlist" class="hidden">
-
-        <div class="other"><div class="otherimage"><a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/287780305"><img src="imgs/pablo-6.jpg"/></a></div><div class="othertitle"><div><a target="_blank" rel="noopener noreferrer" href="time_with_people_french.html">Time With People</a></div><div class="otherinfo">French translation of opera by Tim Parkinson</div></div></div>
-
-        <div class="other"><div class="otherimage"><a target="_blank" rel="noopener noreferrer" href="http://annikakahrs.com/"><img src="imgs/the_lord_loves_changes.jpg"/></a></div><div class="othertitle"><div><a target="_blank" rel="noopener noreferrer" href="http://annikakahrs.com/">the lord loves changes, it's one of his biggest delusions</a></div><div class="otherinfo">Music for video work by Annika Kahrs</div></div></div>
-
-        <div class="other"><div class="otherimage"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=nWIbSgtzAOc"><img src="imgs/alone-together.jpg"/></a></div><div class="othertitle"><div><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=nWIbSgtzAOc">Alone Together</a></div><div class="otherinfo">Music for performance work by Annika Kahrs</div></div></div>
-
-        <div class="other"><div class="otherimage"><a target="_blank" rel="noopener noreferrer" href="https://cambridgescholars.com/collaborative-and-distributed-processes-in-contemporary-music-making"><img src="imgs/collaborative-processes.jpeg"/></a></div><div class="othertitle"><div><a target="_blank" rel="noopener noreferrer" href="https://cambridgescholars.com/collaborative-and-distributed-processes-in-contemporary-music-making">Colourful Interactions: composers, scores and music as performance</a></div><div class="otherinfo">Book Chapter</div></div></div>
-
-        <div class="other"><div class="otherimage"><a target="_blank" rel="noopener noreferrer" href="https://musiktexte.de/epages/dc91cfee-4fdc-41fe-82da-0c2b88528c1e.sf/en_US/?ObjectPath=/Shops/dc91cfee-4fdc-41fe-82da-0c2b88528c1e/Products/MT-149"><img src="imgs/MT-149.gif"/></a></div><div class="othertitle"><div><a target="_blank" rel="noopener noreferrer" href="https://musiktexte.de/epages/dc91cfee-4fdc-41fe-82da-0c2b88528c1e.sf/en_US/?ObjectPath=/Shops/dc91cfee-4fdc-41fe-82da-0c2b88528c1e/Products/MT-149">A Paean for Theatrical Scores</a></div><div class="otherinfo">Text published in Musik Texte 149</div></div></div>
-
-        <div class="other"><div class="otherimage"><a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/album/6Z2nqmEC0bameA3IwGHheO"><img src="imgs/hjorth-cover.jpg"/></a></div><div class="othertitle"><div><a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/album/6Z2nqmEC0bameA3IwGHheO">Louise Hjorth Hansen: A Short Story</a></div><div class="otherinfo">CD release</div></div></div>
-
-        <div class="other"><div class="otherimage"><a target="_blank" rel="noopener noreferrer" href="http://www.kammerklang.co.uk"><img src="imgs/kk-logo-v4.jpg"/></a></div><div class="othertitle"><div><a target="_blank" rel="noopener noreferrer" href="http://www.kammerklang.co.uk">Kammer Klang</a></div><div class="otherinfo">New music series based at Cafe Oto</div></div></div>
-
-        <div class="other">
-          <div class="otherimage"><a target="_blank" rel="noopener noreferrer" href="http://www.weisslich.com"><img src="imgs/w_logo_small.png"/></a>
-          </div>
-          <div class="othertitle">
-            <div><a target="_blank" rel="noopener noreferrer" href="http://www.weisslich.com">Weisslich</a>
+          <div class="row">
+            <div class="column">
+              <a onclick="showhide('debussysecret')"><img src="imgs/debussy-secret-pfeil.jpg"/></a>
+              <a onclick="showhide('empathy')"><img src="imgs/empathy_reducer_1.jpg"/></a>
+              <a onclick="showhide('sitzfleisch')"><img src="imgs/james_sitting_1.jpg"/></a>
+              <a onclick="showhide('trj-wire')"><img src="imgs/TRJ-Wire-403-1.jpg"/></a>
             </div>
-            <div class="otherinfo">UK based experimental music and performance series
+            <div class="column">
+              <a onclick="showhide('ls2')"><img src="imgs/julia_LEVS.jpg"/></a>
+              <a onclick="showhide('ls4')"><img src="imgs/LS4-xy.png"/></a>
+              <a onclick="showhide('ls6')"><img src="imgs/LS6_1.jpg"></a>
+              <a onclick="showhide('ls7')"><img src="imgs/LS7-4.jpg"></a>
+              <a onclick="showhide('voxpop')"><img src="imgs/vox_pop_ba.png"/></a>
+            </div>
+            <div class="column">
+              <a onclick="showhide('reflects')"><img src="imgs/ZUBIN_KANGA_City_London_373.jpg"/></a>
+              <a onclick="showhide('ls1')"><img src="imgs/LS1_FTH.jpg"/></a>
+              <a onclick="showhide('autoglossia')"><img src="imgs/autogloss-2.png"/></a>
+              <a onclick="showhide('neitherserious')"><img src="imgs/neither_serious_impacts_2_copy.jpg"/></a>
             </div>
           </div>
+
         </div>
+  		</div>
 
-      </div>
+  			<div id="debussysecret" class="hidden">
+  				<div class="title">Debussy's Secret Devotions</div>
+        		<div class="text">Article</div><br>
 
-    </div>
+        		<div class="text">Debussy's Secret Devotions is a piece of speculative musicology which reimagines Claude Debussy's life story and the true purpose of his music. Written as a correspondence between academic colleagues, it sheds light on the composer's association with a shadowy sect called the Sequanae – a fringe spiritual terrorist group who sought to reset western civilization through natural disaster, and who worshipped the goddess of the river Seine, Sequana.</div><br>
 
-   <!--<div id="footer">&copy; Louis d'Heudieres 2020</div>-->
+        		<img src="imgs/debussy-secret-pfeil.jpg" style="width: 75%"/>
 
-  </div>
+       			<div class="perflist"><br>
+       				<p>Published in <a href="https://www.montezpress.com/catalogue/pfeil/friend/">Pfeil Magazine #16 - Friend</a>, 2022</p>
+       				<p>Readings: Montez Press Radio, London (2022)</p>
+       				<p>See also: <a onclick="showhide('reflects')">Reflects Dans Sequana</a></p>
+        		</div>
+        	</div>
+
+  			<div id="reflects" class="hidden">
+  				<div class="title">Reflects Dans Sequana</div>
+        		<div class="text">Performance for pianist, sampler, video<br>15 minutes</div><br>
+
+        		<div class="text">Reflects Dans Sequana reimagines Claude Debussy's motivations for composing, construing his piano music as too politically and culturally subversive for twenty-first century audiences. Looking at a selection of water-inspired piano pieces through a warped lens, it proposes solutions for how this music should be reinterpreted and corrected. In so doing, it seeks to playfully dismantle the assumptions of the wider western art music tradition, questioning its claims to transcendence, universality, and cultural relevance, while simultaneously celebrating it.</div><br>
+
+        		<img src="imgs/ZUBIN_KANGA_City_London_347.jpg" style="width: 75%"/>
+        		<img src="imgs/ZUBIN_KANGA_City_London_355.jpg" style="width: 75%"/>
+        		<img src="imgs/ZUBIN_KANGA_City_London_373.jpg" style="width: 75%"/>
+        		<img src="imgs/ZUBIN_KANGA_City_London_388.jpg" style="width: 75%"/>
+        		<img src="imgs/ZUBIN_KANGA_City_London_486.jpg" style="width: 75%"/>
+        		<img src="imgs/ZUBIN_KANGA_City_London_493.jpg" style="width: 75%"/>
+        		<img src="imgs/ZUBIN_KANGA_City_London_497.jpg" style="width: 75%"/>
+
+       			<div class="perflist"><br>
+       				<p>Written for and commissioned by <a href="https://www.zubinkanga.com/">Zubin Kanga</a></p>
+       				<p>Performances: Kettle's Yard, Cambridge (2022), City University, London (2022)</p>
+       				<p>See also: <a onclick="showhide('debussysecret')">Debussy's Secret Devotions</a></p>
+        		</div>
+        	</div>
+
+  			<div id="lungs" class="hidden">
+  				<div class="title">Need Bigger Lungs</div>
+        		<div class="text">Performance for Kathryn Williams, tuba<br>1 minute</div><br>
+
+        		<div class="text">Written for Kathryn Williams's <a href="http://www.kathryngwilliams.com/coming-up-for-air.html">Coming Up For Air</a> project, which commissions pieces lasting one single breath. Kathryn's project was inspired from her recovering from chronic respiratory conditions. Seeking a personal connection with the idea of breath, I went back to my teenage years, during which I played the tuba fairly seriously. During this time, I was frequently told that my sound wasn't big enough, and that I needed to develop my lung capacity.</div><br>
+
+        		<img src="imgs/Need_Bigger_Lungs_Full.png" style="width: 75%"/>
+
+       			<div class="perflist"><br>
+       				Performances: Frequency Series, Constellation, Chicago (2020), Deep Minimalism, Southbank Centre, London (2019)
+        		</div>
+        	</div>
+
+  			<div id="sitzfleisch" class="hidden">
+  				<div class="title">Sitzfleisch</div>
+				<div class="text">Performance for trio, narrator, styrofoam instruments, video, stereo sound</div>
+				<div class="text">30 minutes</div><br>
+
+        		<div class="text">Sitzfleisch rethinks the theory behind the acts of sitting, listening, and making music in a concert hall. After theorists in the early 1800s elevated music to the status where it could express transcendental truths, it became increasingly important for audiences to sit in silence, the better to appreciate the music in a purely aesthetic way. 'Sitzfleisch' was then invented as a term to refer to the act of sitting still during a concert using the control of one's muscles. Sitzfleisch features hobbling instrumental pulses, thick MIDI interludes, conceptual applause, live commentary, and styrofoam. All along, the idea that the audience is undergoing a transcendental moment is reinforced to the point of absurdity.<br>
+        		</div>
+        		<br>
+
+        		<iframe title="vimeo-player" src="https://player.vimeo.com/video/393921013?h=db75209fbe" width="75%" height="42%" frameborder="0" allowfullscreen></iframe>
+
+        		<img src="imgs/filipa_11.jpg" style="width: 75%"/>
+        		<img src="imgs/bass_drums-1.jpg" style="width: 75%"/>
+        		<img src="imgs/james_sitting_1.jpg" style="width: 75%"/>        
+        		<img src="imgs/filipa_10.jpg" style="width: 75%"/>        
+        		<div class="perflist">PostX, Merelbecke, 2019. Photos by Down The Rabbit Hole.</div><br>
+
+        		<iframe src="https://player.vimeo.com/video/320372338" width="75%" height="42%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        		<img src="imgs/sitz_commentating.png" style="width: 75%"/>
+        		<img src="imgs/sitz_3.jpg" style="width: 75%"/>
+        		<img src="imgs/sitz_6.jpg" style="width: 75%"/>
+        		<img src="imgs/sitz_7.jpg" style="width: 75%"/>
+        		<img src="imgs/sitz_2.jpg" style="width: 75%"/>
+        		<div class="perflist">First version, Fleet Street Theatre, Hamburg, 2019. Photos by Nina Kuttler.</div>
+
+        		<iframe width="75%" height="42%" src="https://www.youtube.com/embed/5ApRXp5eo-c?start=993" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        		<div class="perflist">Livestream version for Walter TV, Brussels, 2021.</div>
+
+
+        		<div class="perflist">
+        			<p>Written in collaboration with <a href="https://www.dtrh-collective.com/">Down The Rabbit Hole</a> at residencies in Snape Maltings (UK), Fleet Street Theatre (DE), and PostX (BE) withs funds from Rudolf Augstein Stiftung, Hamburger Kulturstiftung, Fleet Street Theatre, and Ulysses Network.</p>
+        			<p>Performances: Walter, Brussels (2021), My Privacy Is Your Privacy, Belgium (2019), Fleet Street Theatre, Hamburg (2019)</p>
+    			</div>
+    		</div>
+
+  			<div id="ls7" class="hidden">
+  				<div class="title">Laughter Studies 7</div>
+  				<div class="text">Performance for three vocalists, ensemble, surtitles, stereo sound</div>
+        		<div class="text">18 minutes</div><br>
+
+        		<div class="text">Laughter Studies 7 uses listening, verbal description, music and text to explore the sonic environment of concert halls. It evokes sounds from everyday life; sounds an audience makes as it quietens down before the arrival of performers on stage; sounds of a dystopian function band noodling its way through aimless musical material; sounds of musicians shuffling off a stage; sounds created live in the room by the tense community of concert-goers.<br><br>
+        		</div>
+
+        		<iframe src="https://player.vimeo.com/video/324153961" width="75%" height="42%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        		<img src="imgs/LS7-1.jpg" style="width: 75%"/>
+        		<img src="imgs/LS7-2.jpg" style="width: 75%"/>
+        		<img src="imgs/LS7-5.jpg" style="width: 75%"/>
+        		<img src="imgs/LS7-3.jpg" style="width: 75%"/>
+
+        		<div class="perflist">
+        			Photos by Kristof Lemp<br>
+        		</div>
+        		<div class="perflist">
+        			<p>Written for <a href="https://www.nadarensemble.be/">Nadar Ensemble</a> as part of the Nadar Summer School for composers and sound artists 2017. Revised for the Darmst&auml;dter Internationale Ferienkurse f&uuml;r Neue Musik 2018.</p>
+        			<p>Performances: Gaudeamus Muziekweek (2019), Darmstadt International Ferienkurse f&uuml;r Neue Musik (2018), Nadar Summer School, Antwerp (2017)</p>
+        		</div>
+        	</div>
+
+        	<div id="ls6" class="hidden">
+        		<div class="title">Laughter Studies 6</div>
+        		<div class="text">Performance for four vocalists, ensemble</div>
+        		<div class="text">15 minutes</div><br>
+		
+		        <div class="text">Laughter Studies 6 features treadmills, repeated melodies, vocal imitations, musical imitations of those imitations, shouted banalities, and a duet between a dancer and an improvised MIDI drum solo.<br><br>	
+	        	</div>
+
+	        	<img src="imgs/LS6_1.jpg" style="width: 75%"/>
+        		<img src="imgs/LS6_2.jpg" style="width: 75%"/>
+        		<img src="imgs/LS6_3.jpg" style="width: 75%"/>
+	
+	        	<div class="perflist"><br>
+	        		<p>Commissioned by <a href="http://www.an-assembly.com/">An Assembly</a> in 2017. Revised for London Contemporary Music Festival 2019.</p>
+	        		<p>Performances: London Contemporary Music Festival (2019), City University, London (2018), Centrala, Birmingham (2018), Legroom, Manchester (2017)</p>
+	        		<p>Reviews: "like a revival of some long-forgotten children's game", Ivan Hewett, The Telegraph (2019) (<a href="https://www.telegraph.co.uk/music/classical-music/top-best-classical-concerts-review-december-2019/">read</a>), "sparky", Fiona Maddocks, The Guardian (2019) (<a href="https://www.theguardian.com/music/2019/dec/21/christmas-oratorio-kings-place-feinstein-review-david-titterington-organ-st-johns-smith-lcmf-2019">read</a>)</p>	
+        		</div>
+        	</div>
+
+        	<div id="ls5" class="hidden">
+        		<div class="title">Laughter Studies 5</div>
+        		<div class="text">Performance for trio</div>
+        		<div class="text">? minutes</div><br>
+
+        		<div class="text">Laughter Studies 5 lives in a void between almost-completion and permanent revision.<br><br>
+        		</div>
+        		<iframe src="https://player.vimeo.com/video/240291677?h=ceb89cc6a8" width="75%" height="42%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+        		<div class="perflist"><br>
+        			<p>Written for <a href="http://www.jetpack-bellerive.com">Jetpack Bellerive</a>.</p>
+        			<p>Performances: Jetpack Bellerive, Lausanne (2016)</p>
+        		</div>
+        	</div>
+
+        	<div id="ls4" class="hidden">
+        		<div class="title">Laughter Studies 4</div>
+        		<div class="text">Performance for solo vocalist, jazz trio, mixed ensemble</div>
+        		<div class="text">14 minutes</div><br>
+
+        		<div class="text">Laughter Studies 4 involves imitations and descriptions of everyday sounds, disjointed jazz grooves, and music of the so-called great repertoire: Bruckner, Wagner, Mahler. This sets up expectations of musical greatness that may or may not be fulfilled.<br><br>
+       			</div>
+
+       			<iframe width="75%" height="22%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/298850201&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe>
+
+       			<img src="imgs/LS4-xy.png" style="width: 75%"/>
+
+        		<div class="perflist"><br>
+        			<p>Written for <a href="https://www.ensemblexy.com/">ensemble x.y</a>.</p>
+        			<p>Performances: Filthy Lucre, London (2017), I'Klectik, London (2016)</p>
+        		</div>
+        	</div>
+
+        	<div id="ls3" class="hidden">
+        		<div class="title">Laughter Studies 3</div>
+        		<div class="text">Performance for three vocalists</div>
+        		<div class="text">10 minutes</div><br>
+
+        		<div class="text">Laughter Studies 3 explores emotion-laden, human-produced sounds that usually occur spontaneously or involuntarily. It lives in the border between what these sounds mean on a psychological level and what their sonic surface is.<br><br>
+        		</div>
+
+        		<iframe src="https://player.vimeo.com/video/427083578" width="75%" height="42%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+        		<iframe src="https://player.vimeo.com/video/194944670" width="75%" height="42%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        		<div class="perflist"><br>
+        			<p>Originally written for <a href="https://retrodisco.org/">Retro Disco</a>.</p>
+        			<p>Performances: Lucerne Festival (2022), Plus Minus, Reid School of Music, Edinburgh (2019), Line Upon Line, SXSW Austin (2019), Maulwerker, Labor Sonor, Berlin (2016)</p>
+        		</div>
+        	</div>
+
+        	<div id="ls2" class="hidden">
+        		<div class="title">Laughter Studies 2</div>
+        		<div class="text">Performance for two vocalists</div>
+        		<div class="text">9 minutes</div><br>
+
+        		<div class="text">In Laughter Studies 2, two performers describe and imitate recordings taken from a range of sources: holidays in France, d&eacute;rives around London, internet sound libraries, record collections, and people crying and laughing.<br><br>
+        		</div>
+
+        		<iframe width="75%" height="42%" src="https://www.youtube.com/embed/f-5v0GIyy4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        		<iframe width="75%" height="42%" src="https://www.youtube.com/embed/HMQ-NXCUuew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        		<iframe width="75%" height="42%" src="https://www.youtube.com/embed/bX5nLvvGu-Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        		<iframe width="75%" height="42%" src="https://www.youtube.com/embed/w_ViDLoGzZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        		<img src="imgs/julia_LEVS.jpg" style="width: 75%"/>
+
+        		<div class="perflist"><br>
+        			<p>Performances: Current Resonance, Denmark (2022), Ensemble Container, Basel (2021), Nick Photinos, Julia Wolfe, Bang On A Can Summer Festival (2019), Julia Masli, Julie Nesher, London Experimental Variety Show (2019), Stephanie Lamprea, Naomi Woo, Spectrum, New York (2018), Rosie Middleton, Ben Zucker, Banff Centre for the Arts (2018)</p>
+        			<p>See also: <a onclick="showhide('trj-wire')">Unsettling Scores</a>, Tim Rutherford-Johnson, The Wire</p>
+        		</div>
+        	</div>
+
+        	<div id="ls1" class="hidden">
+        		<div class="title">Laughter Studies 1</div>
+
+        		<div class="text">Performance for two vocalists</div>
+        		<div class="text">11 minutes</div><br>
+	
+        		<div class="text">In Laughter Studies 1, two performers describe and imitate an assembled collage of sounds communicated via headphones. The focus of the piece (and each piece in the series) is on each individual performer's spontaneous reactions to the sounds.
+        		</div>
+        		<br>
+
+        		<iframe width="75%" height="42%" src="https://www.youtube.com/embed/tqkRjw979pA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        		<iframe width="75%" height="42%" src="https://www.youtube.com/embed/cJzNZGu0akE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        		<img src="imgs/LS1_FTH.jpg" style="width: 75%"/>
+
+        		<div class="perflist"><br>
+        			<p>Written for <a href="https://www.antoniabarnettmcintosh.com">Antonia Barnett McIntosh</a> and <a href="https://www.josephhouston.co.uk/">Joseph Houston</a>.</p>
+        			<p>Performances & broadcasts: Parkinson Saunders, Borealis Listening Club (2019), scapegoat, No Hay Banda, Montreal (2017), soundinitiative, Espace des Arts Sans Fronti&egrave;res, Paris (2017), Juliet Fraser, Jennifer Walshe, Cafe Oto (2016), BBC Radio 3 Hear And Now (2016)</p>
+        			<p>See also: <a onclick="showhide('trj-wire')">Unsettling Scores</a>, Tim Rutherford-Johnson, The Wire</p>
+        		</div>
+        	</div>
+
+        	<div id="autoglossia" class="hidden">
+        		<div class="title">Autoglossia</div>
+        		<div class="text">Digital EP</div>
+        		<div class="text">8 minutes</div><br>
+	
+        		<div class="text">Autoglossia refers to the idea of ‘self-language’ or ‘speaking to/through oneself’. It was made with software by Rodrigo Constanzo called <a href="http://www.rodrigoconstanzo.com/software/">C-C-Combine</a>. When I sang into the software, it tried to match my live voice to a stored bank of samples, and then triggered them. In this case, these were other recordings of my voice taken on my phone over many years. The end result is a jumble of sounds and syllables that sometimes sound like their own weird language, which I accompanied using MIDI instruments and stuff I had to hand, like a stylophone.
+        		</div><br>
+
+        		<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=974848990/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>
+
+        		<div class="perflist"><br>
+        			Broadcasts: BBC Radio 3 Hear And Now (2018)
+        		</div>
+        	</div>
+
+        	<div id="empathy" class="hidden">
+        		<div class="title">Empathy Reducer</div>
+        		<div class="text">Performance for pianist, stereo sound</div>
+        		<div class="text">17 minutes</div><br>
+	
+        		<div class="text">Empathy Reducer is a piece about playing the piano. Different facets of piano playing – everything from traditional repertoire, to the physical action of keys being pressed, to plain old virtuosity, to good old wood’n’string resonances – are taken as basic objects. Rather than being presented directly, they are skirted around, hinted at, and put through various filters. Some of these include a human voice – the piano’s great-great-great-great-great grandparent? – and a MIDI controller – an enhanced, Philip K. Dick-like replicant of a piano, an AI computer to the piano’s humble homo sapiens. Stretched in the middle of all these things – octopus-like, spread-eagled – is that curved, tensed, gridded institution of an instrument.
+        		</div><br>
+
+        		<iframe title="vimeo-player" src="https://player.vimeo.com/video/539200658?h=874ffe7ffe" width="75%" height="42%" frameborder="0" allowfullscreen></iframe>
+
+        		<div class="perflist"><br>
+        		<p>Written for and commissioned by <a href="https://www.josephhouston.co.uk/">Joseph Houston</a>.</p>
+        		<p>Performances: St John's, Smith Square, London (2018), Uneh&ouml;rte Musik, BKA Theatre Berlin (2017)</p>
+        		</div>
+        	</div>
+
+        	<div id="voxpop" class="hidden">
+        		<div class="title">Vox Pop</div>
+        		<div class="text">Performance for four performers</div>
+        		<div class="text">13 minutes</div><br>
+	
+        		<div class="text">Vox Pop involves a score made of samples from Wagner's operas. Four performers interpret the samples through descriptions, imitations, and gestures. The original music is filtered through their minds and bodies, leaving a series of disjuncted translations of the original.
+        		</div><br>
+
+        		<iframe title="vimeo-player" src="https://player.vimeo.com/video/192920660" width="75%" height="42%"frameborder="0" allowfullscreen></iframe>
+        		<img src="imgs/ba_voxpop_1.jpg" style="width: 75%"/>
+        		<img src="imgs/ba_voxpop_2.jpg" style="width: 75%"/>
+
+        		<div class="perflist">Bastard Assignments. Photos by Dimitri Djuric<br></div>
+
+            <img src="imgs/voxpop_NAMES_Mark_Daniel_Prohaska_1.jpg" style="width: 75%"/>
+            <img src="imgs/voxpop_NAMES_Mark_Daniel_Prohaska_2.jpg" style="width: 75%"/>
+            <img src="imgs/voxpop_NAMES_Mark_Daniel_Prohaska_3.jpg" style="width: 75%"/>
+
+            <div class="perflist">NAMES, Mosaikfest Salzburg. Photos by Mark-Daniel Prohaska<br></div>
+        	
+        		<div class="perflist">
+        			<p>First version written for <a href="http://www.postparadise.ricercata.org/About.html">Post Paradise</a> in 2016. Revised for <a href="https://bastardassignments.com/">Bastard Assignments</a>.</p>
+        			<p>Performances: NAMES, Teatri del Suono Trieste, Mosaikfest Salzburg (2022), Late Music Ensemble, York (2017), Post Paradise, Birmingham (2016), Bastard Assignments, Block 336, London (2016)</p>
+        		</div>
+        	</div>
+
+        	<div id="totalexp" class="hidden">
+        		<div class="title">Total Experience</div>
+        		<div class="text">Performance for soloist</div>
+        		<div class="text">7 minutes</div><br>
+		
+        		<div class="text">A radical interpretation of the transformation music from Wagner's Parsifal, in which a protagonist enjoys a decadent pairing of cheese and wine at the exact point of the music's climax. An examination of pretentiousness, privilege, and musical transcendence.
+        		</div><br>
+
+        		<iframe title="vimeo-player" src="https://player.vimeo.com/video/407975675?h=deabc907c3" width="75%" height="42%" frameborder="0" allowfullscreen></iframe>
+
+        		<div class="perflist">
+        			<br>Performances: the billion year spree, Flat Time House, London (2019), Weisslich 8, Hundred Years Gallery, London (2016)
+        		</div>
+        	</div>
+
+        	<div id="somethoughts" class="hidden">
+        		<div class="title">Some Thoughts on La Monte Young's Composition 1960 #10</div>
+        		<div class="text">Performance for soloist and powerpoint</div>
+        		<div class="text">10 minutes</div><br>
+		
+        		<div class="text">A powerpoint presentation outlining various different ways one could try to perform La Monte Young's Composition 1960 #10. Circles of fifths that never end and phasing that goes on for an impractically long time are both considered. The limits of the presenter's vocal range are also tested.
+        		</div><br>
+
+	        	<img src="imgs/its_about_time_FTH.jpg" style="width: 75%"/>
+	        	<img src="imgs/its_about_time_FTH_5.jpg" style="width: 75%"/>
+	        	<img src="imgs/some_thoughts_3.jpg" style="width: 75%"/>
+
+        		<div class="perflist">
+        			<br>Performances: the billion year spree, Flat Time House, London (2019), Weisslich 3, Hundred Years Gallery, London (2015)
+        		</div>
+        	</div>
+
+        	<div id="foron" class="hidden">
+        		<div class="title">for_____ on_____</div>
+        		<div class="text">Performance for any number of musicians, stereo sound</div>
+        		<div class="text">8 minutes</div><br>
+		
+        		<div class="text">for_____ on_____ explores the idea of learning and rehearsing as performance. A group of performers hear a field recording for the first time. A voice explains that they should use it as a score, and have a limited time to learn it on their instruments. The audience are with them as they negotiate this task. (With each performance of the piece, the title is filled in with the names of the performers and date of performance.)
+        		</div><br>
+
+        		<iframe width="75%" height="42%" src="https://www.youtube.com/embed/rQjPxtWBrMw" frameborder="0" allowfullscreen></iframe>
+
+        		<iframe width="75%" height="42%" src="https://www.youtube.com/embed/P_AGoiWhaMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+
+        		<div class="perflist"><br>
+        			Performances: Michael Baldwin, Peyee Chen, Rodrigo Constanzo, Huddersfield (2015), Tim Cape, Edward Henderson, Bastard Assignments, London (2015), David Pocknee, Ruben Zilberstein, Weisslich 2, Hundred Years Gallery, London (2015)
+        		</div>
+        	</div>
+
+        	<div id="neitherserious" class="hidden">
+        		<div class="title">neither serious/or, I take the liberty/of not writing to you/regarding my serious 'Variations'</div>
+
+        		<div class="text">Performance for string quartet</div>
+        		<div class="text">8 minutes</div><br>
+	
+        		<div class="text">neither serious/or, I take the liberty/of not writing to you/regarding my serious 'Variations' explores the idea of sight-reading and rehearsal as performance. Four members of a string quartet open a set of envelopes containing scores they have not seen before. The music inside is inspired by one of the opening bars of Beethoven's String Quartet Op. 18, No. 2 in G major.
+        		</div><br>
+
+        		<iframe width="75%" height="auto" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189529329&color=%23acc8c8&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+
+        		<img src="imgs/neither_serious_impacts.jpg" style="width: 75%"/>
+        		<img src="imgs/neither_serious_impacts_2_orig.jpg" style="width: 75%"/>
+        		<img src="imgs/neither_serious_impacts_3.jpg" style="width: 75%"/>
+
+        		<div class="perflist">Photos by Josh Hyde</div>
+
+        		<div class="perflist">
+        			<p>Commissioned by <a href="http://eightforty.co.uk/">840 concert series</a> for the Manon Quartet.</p>
+        			<p>Performances: Quatuor Impacts, Cit&eacute; des Arts, Paris (2016), Manon Quartet, 840, London (2015)</p>
+        		</div>
+        	</div>
+
+        	<div id="attending" class="hidden">
+  				<div class="title">Attending to Attending</div>
+  				<div class="text">Article, co-written with <a href="https://www.charliesdraulig.com/">Charlie Sdraulig</a></div><br>
+
+        		<div class="text">This article proposes ways of reimagining how performers and audiences relate to one another during live performances. In contrast to forms of participation where audiences emulate well-known performer and/or composer models, we argue for sensitivity to audiences as they present themselves. Attending to, reciprocating and adopting audience behaviour in/as performance can lead to novel interactions, identities and formats for creative practice. We discuss pieces by Pauline Oliveros, David Helbich and Carolyn Chen, as well as our own practice research. Read it <a href="https://www.cambridge.org/core/journals/tempo/article/abs/attending-to-attending-performing-audience-personae-in-contemporary-music/00768FA696189A44AD9D2F423D7D5FB7" target="_blank">here</a>.
+        		</div><br>
+
+        		<div class="perflist">
+        		<p>Published in <a href="https://www.cambridge.org/core/journals/tempo/issue/8A81B4F2784643C0B42BE508D1724F47">Tempo</a> (Cambridge University Press), Issue 300, April 2022.</p>
+        		<p>Conference paper versions of this article presented at: 13th Conference on Interdisciplinary Musicology, University of Edinburgh & University of Hong Kong (2022), Rethinking Participatory Processes, Huddersfield University (2022)</p>
+        		</div>
+        	</div>
+
+        	<div id="phd" class="hidden">
+  				<div class="title">Scores In Time</div>
+  				<div class="text">PhD Thesis</div><br>
+
+        		<div class="text">This thesis is about using sound as musical notation. It features many of the pieces on this website, and discusses a range of themes: rehearsing vs performing, verbal notation, sound perception, listening to listening, phenomenology, and the use of headpieces in Mexican television of the 1950s. Read it <a href="http://researchspace.bathspa.ac.uk/13596/1/13596.pdf" target="_blank">here</a>.
+        		</div>
+        	</div>
+
+        	<div id="futureclass" class="hidden">
+  				<div class="title">Future Classical</div>
+
+        		<div class="text">I spoke to <a href="http://benjamintassie.com/">Benjamin Tassie</a> on his show, <a href="http://benjamintassie.com/future-classical-on-resonance-fm">Future Classical</a>, on Resonance FM. Broadcast on 19th April 2022.</div><br>
+
+        		<iframe width="75%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FResonance%2Ffuture-classical-19-april-2022-louis-dheudieres%2F" frameborder="0" ></iframe>
+        	</div>
+
+        	<div id="trj-wire" class="hidden">
+  				<div class="title">Unsettling Scores</div>
+
+        		<div class="text">Article by Tim Rutherford-Johnson for <a href="https://www.thewire.co.uk/issues/403">issue 403 of the Wire</a>, published in September 2017.</div><br>
+
+        		<img src="imgs/TRJ-Wire-403-1.jpg" style="width: 75%"/>
+        		<img src="imgs/TRJ-Wire-403-2.jpg" style="width: 75%"/>
+        		<img src="imgs/TRJ-Wire-403-3.jpg" style="width: 75%"/>
+        		<img src="imgs/TRJ-Wire-403-4.jpg" style="width: 75%"/>
+        	</div>
+
+        	<div id="about" class="hidden">
+        		<div class="padding"></div>
+
+        		<div class="text">I am a composer, sound artist and researcher. I was born in 1988 in Suresnes, France, lived in the UK for a while, and am now based in Hamburg.<br><br>
+
+        		I work across the mediums of writing, live performance and installation, seeking to speculatively (re)imagine pasts, presents and futures of musical production and reception. My work is characterised by  stream-of-consciousness descriptions of recorded sound; pseudo-intellectual ramblings underpinned by hobbling instrumental pulses; speakers talking to floors; transcendental climaxes squeezed through MIDI timbres; paranoid associations between musical details and religious hegemonies; decadent rituals pairing Wagnerian harmony with fine cheese. It has been performed in everything from underground corners of small DIY scenes to state-funded international festivals (e.g. Lucerne, Darmstadt, Gaudeamus, Bang On A Can), broadcast on national radio stations (e.g. BBC Radio 3, SWR 2), exhibited in insitutions such as Kunstverein Harburger Bahnhof, and published in Pfeil and TEMPO magazines.<br><br>
+
+        		My research interests are notation, speculative music history, materialities of sound, participatory art, and music's sociality, in particular the culturally-embedded and -enacted roles of composer, performer and audience. 
+        		</div><br>
+
+        		<div class="text">louis [dot] dheudieres [at] live [dot] co [dot] uk</div><br>
+
+        		<img src="imgs/Louis-BW.jpeg" style="width: 75%"/>
+        		<div class="perflist">Photo by Nina Kuttler</div>
+
+        	</div>
+
+  	</div>
 
   </body>
 
